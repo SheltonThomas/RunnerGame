@@ -12,6 +12,7 @@ public class CountdownBehavior : MonoBehaviour
     void Start()
     {
         countdown.alignment = TextAlignment.Center;
+        timeToStart++;
     }
 
     // Update is called once per frame
