@@ -33,7 +33,7 @@ public class GravityBehavior : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Wall")
+        if (collision.gameObject.tag == "Wall")
         {
             canSwapGravity = false;
         }

@@ -5,34 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MovementBehavior : MonoBehaviour
 {
-    public float levelTowMovementSpeed = 5;
     public float levelOneMovementSpeed = 10;
+    public float levelTwoMovementSpeed = 5;
+    public Transform target;
+
+    [SerializeField]
+    private GravityBehavior gravityBehavior;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (SceneManager.GetActiveScene().name == "Running")
-        {
-            Vector3 movementDirection = new Vector3(0, 0, 0);
-
-            movementDirection += new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            movementDirection.Normalize();
-
-            movementDirection *= levelTowMovementSpeed;
-
-            transform.Translate(movementDirection * Time.deltaTime);
-        }
-        else
+        if (target == null)
         {
             Vector3 movement = new Vector3(levelOneMovementSpeed, 0, 0);
 
             transform.Translate(movement * Time.deltaTime);
+        }
+        else
+        {
+            Vector3 movementDirection = (target.position - transform.position);
+            movementDirection.Normalize();
+
+            transform.Translate(movementDirection * Time.deltaTime * levelTwoMovementSpeed);
         }
     }
 
@@ -41,6 +41,7 @@ public class MovementBehavior : MonoBehaviour
         if(collision.gameObject.name == "Obstacle")
         {
             enabled = false;
+            gravityBehavior.enabled = false;
         }
     }
 }
