@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ShootBehavior : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject bullet;
+    public GameObject bullet;
     // Start is called before the first frame update
     void Start()
     {

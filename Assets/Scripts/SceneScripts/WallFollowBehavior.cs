@@ -1,13 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class CameraFollowBehavior : MonoBehaviour
+public class WallFollowBehavior : MonoBehaviour
 {
-    public Transform target;
-
     private Vector3 distanceFromTarget;
+
+    public Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +17,7 @@ public class CameraFollowBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target == null)
-            return;
-
-        Vector3 cameraPosition = distanceFromTarget + target.position;
-        transform.position = cameraPosition;
+        Vector3 wallPostion = distanceFromTarget + target.position;
+        transform.position = wallPostion;
     }
 }

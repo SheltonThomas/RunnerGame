@@ -9,15 +9,6 @@ public class ScoreBehavior : MonoBehaviour
     [SerializeField]
     private Text scoreText;
 
-    private void Awake()
-    {
-        if (GameObject.Find("Score") != null &&
-            GameObject.Find("Score") != gameObject)
-            Destroy(gameObject);
-
-        DontDestroyOnLoad(gameObject);
-    }
-
     // Update is called once per frame
     void Update()
     {

@@ -14,6 +14,9 @@ public class DistanceFromEndBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+            return;
+
         float distance = endPoint.position.z - player.position.z;
 
         endDistanceText.text = ((int)distance).ToString();

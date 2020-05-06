@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CountdownBehavior : MonoBehaviour
 {
     public float timeToStart = 5;
-    public TextMesh countdown;
+    public Text countdown;
     public MovementBehavior playerMovement;
-    public GravityBehavior gravity;
+    public ShootBehavior playerShooting;
+    public CountdownBehavior countdownBehavior;
+
+    public Text startingWords;
 
     void Start()
     {
-        countdown.alignment = TextAlignment.Center;
         timeToStart++;
     }
 
@@ -22,9 +25,12 @@ public class CountdownBehavior : MonoBehaviour
         countdown.text = ((int)timeToStart).ToString();
         if(timeToStart < 1f)
         {
-            gameObject.SetActive(false);
             playerMovement.enabled = true;
-            gravity.enabled = true;
+            playerShooting.enabled = true;
+
+            countdown.enabled = false;
+            startingWords.enabled = false;
+            countdownBehavior.enabled = false;
         }
     }
 }

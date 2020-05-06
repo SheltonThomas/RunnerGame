@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
-    private Vector3 target;
 
     public float bulletSpeed = 2;
 
@@ -21,7 +20,11 @@ public class BulletBehavior : MonoBehaviour
 
         playerPlane.Raycast(mouseRay, out rayDistance);
 
-        target = mouseRay.GetPoint(rayDistance);
+        Vector3 target = mouseRay.GetPoint(rayDistance);
+
+        Vector3 fireDirection = target - transform.position;
+
+        transform.forward = fireDirection;
 
         score = GameObject.Find("Score").GetComponent<ScoreBehavior>();
     }
@@ -29,22 +32,23 @@ public class BulletBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 direction = target - transform.position;
 
-        direction.Normalize();
-        direction *= bulletSpeed;
-
-        transform.position += direction * Time.deltaTime;
-        if(((transform.position.y - target.y >= -1) && (transform.position.y - target.y <= 1)) &&
-           ((transform.position.x - target.x >= -1) && (transform.position.x - target.x <= 1)) &&
-           ((transform.position.z - target.z >= -1) && (transform.position.z - target.z <= 1)))
-        {
-            Destroy(gameObject);
-        }
+        transform.position += transform.forward * (bulletSpeed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Bullet")
+            return;
+
+        if(collision.gameObject.tag == "Wall")
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
         score.score += 5;
     }
 }

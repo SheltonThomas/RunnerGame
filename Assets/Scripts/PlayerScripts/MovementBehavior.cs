@@ -5,12 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MovementBehavior : MonoBehaviour
 {
-    public float levelOneMovementSpeed = 10;
-    public float levelTwoMovementSpeed = 5;
+    public float movementSpeed = 10;
     public Transform target;
-
-    [SerializeField]
-    private GravityBehavior gravityBehavior;
 
     // Start is called before the first frame update
     void Start()
@@ -21,19 +17,10 @@ public class MovementBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (target == null)
-        {
-            Vector3 movement = new Vector3(levelOneMovementSpeed, 0, 0);
-
-            transform.Translate(movement * Time.deltaTime);
-        }
-        else
-        {
             Vector3 movementDirection = (target.position - transform.position);
             movementDirection.Normalize();
 
-            transform.Translate(movementDirection * Time.deltaTime * levelTwoMovementSpeed);
-        }
+            transform.Translate(movementDirection * Time.deltaTime * movementSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -41,7 +28,6 @@ public class MovementBehavior : MonoBehaviour
         if(collision.gameObject.name == "Obstacle")
         {
             enabled = false;
-            gravityBehavior.enabled = false;
         }
     }
 }
