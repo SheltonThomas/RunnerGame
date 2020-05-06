@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCollisionBehavior : MonoBehaviour
 {
-    public float health = 10;
+    public float health = 100;
     private bool damaged = false;
 
     private float timeToRecover = 1;
@@ -17,22 +17,22 @@ public class PlayerCollisionBehavior : MonoBehaviour
         if(damaged)
         {
             timeToRecover -= Time.deltaTime;
-            if (recovery <= 0)
+            if (timeToRecover <= 0)
             {
                 damaged = false;
                 timeToRecover = recovery;
             }
         }
 
-        float healtBarScale = health * .1f;
-        healthBar.transform.localScale = new Vector3(healtBarScale, 1, .25f);
+        float healthBarScale = health / 100;
+        healthBar.transform.localScale = new Vector3(healthBarScale, 1, .25f);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if(!damaged && collision.gameObject.tag == "Enemy")
         {
-            health--;
+            health -= 20;
             damaged = true;
         }
     }
