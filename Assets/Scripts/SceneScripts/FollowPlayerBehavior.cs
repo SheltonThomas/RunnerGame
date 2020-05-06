@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallFollowBehavior : MonoBehaviour
+public class FollowPlayerBehavior : MonoBehaviour
 {
     private Vector3 distanceFromTarget;
 
