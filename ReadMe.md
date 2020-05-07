@@ -4,24 +4,22 @@
 
 ### Objective
 
-Destroy things in the scene by looking at them.
+Destroy the enemies as they come to you and reach the end without losing all your health.
 
 ### Controls
 
 #### Desktop
 
-WASD        - Move
-
-Left-Click  - Look, Destruction Ray
+Left-Click  - Shoot
 
 #### Mobile
 
-Touch       - Look, Destruction Ray
+Touch       - Shoot
 
 ## WebGL Player
 
-https://vanphelan.github.io/AIEUnityTutorials/player/
+https://SheltonThomas.github.io/RunnerGame/player/
 
 ## Documentation
 
-https://vanphelan.github.io/AIEUnityTutorials/docs/
+https://SheltonThomas.github.io/RunnerGame/docs/
