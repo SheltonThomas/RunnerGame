@@ -8,8 +8,11 @@ using UnityEngine.SceneManagement;
 public class FinishLineBehavior : MonoBehaviour
 {
     /**
-     * Sets the game over ui.**/
+     * Sets the game over ui, shootbehavior, movementbehavior and the spawners.**/
+    public ShootBehavior shootBehavior;
+    public MovementBehavior movementBehavior;
     public Canvas gameOverUI;
+    public GameObject spawners;
 
     /**
      * Activates Game over screen.**/
@@ -17,6 +20,9 @@ public class FinishLineBehavior : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            shootBehavior.enabled = false;
+            movementBehavior.enabled = false;
+            spawners.SetActive(false);
             gameOverUI.gameObject.SetActive(true);
         }
     }
