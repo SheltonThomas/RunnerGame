@@ -4,7 +4,7 @@
 
 ### Objective
 
-Destroy the enemies as they come to you and reach the end without losing all your health.
+Destroy the enemies as they try to attack you and reach the end without losing all your health.
 
 ### Controls
 
