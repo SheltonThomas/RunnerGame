@@ -19,3 +19,7 @@ Touch       - Shoot
 ## WebGL Player
 
 https://SheltonThomas.github.io/RunnerGame/player/
+
+## Documentation
+
+https://SheltonThomas.github.io/RunnerGame/docs/
