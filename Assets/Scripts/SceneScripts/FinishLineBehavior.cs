@@ -8,16 +8,16 @@ using UnityEngine.SceneManagement;
 public class FinishLineBehavior : MonoBehaviour
 {
     /**
-     * Sets the next scene's id.**/
-    public int nextSceneId;
+     * Sets the game over ui.**/
+    public Canvas gameOverUI;
 
     /**
-     * Moves player to next scene.**/
+     * Activates Game over screen.**/
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(nextSceneId);
+            gameOverUI.gameObject.SetActive(true);
         }
     }
 }
