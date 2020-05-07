@@ -128,6 +128,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 678672234}
     m_Modifications:
+    - target: {fileID: -7667468245833630317, guid: e381f4c65cadeb746892339bb75b5e2b,
+        type: 3}
+      propertyPath: gameOverUI
+      value: 
+      objectReference: {fileID: 1958518831}
+    - target: {fileID: -7667468245833630317, guid: e381f4c65cadeb746892339bb75b5e2b,
+        type: 3}
+      propertyPath: shootBehavior
+      value: 
+      objectReference: {fileID: 626543496}
+    - target: {fileID: -7667468245833630317, guid: e381f4c65cadeb746892339bb75b5e2b,
+        type: 3}
+      propertyPath: movementBehavior
+      value: 
+      objectReference: {fileID: 525525530}
+    - target: {fileID: -7667468245833630317, guid: e381f4c65cadeb746892339bb75b5e2b,
+        type: 3}
+      propertyPath: spawners
+      value: 
+      objectReference: {fileID: 975161146}
     - target: {fileID: 6523213381212331166, guid: e381f4c65cadeb746892339bb75b5e2b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1377,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 5998312002929825141, guid: 32af53b6acb2db74a827f89679785e6a,
         type: 3}
       propertyPath: ammoRegenRate
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 5998312002929825141, guid: 32af53b6acb2db74a827f89679785e6a,
         type: 3}
