@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['menubuttonbehavior_46',['MenuButtonBehavior',['../class_menu_button_behavior.html',1,'']]],
-  ['movementbehavior_47',['MovementBehavior',['../class_movement_behavior.html',1,'']]]
+  ['finishlinebehavior_76',['FinishLineBehavior',['../class_finish_line_behavior.html',1,'']]],
+  ['followplayerbehavior_77',['FollowPlayerBehavior',['../class_follow_player_behavior.html',1,'']]]
 ];

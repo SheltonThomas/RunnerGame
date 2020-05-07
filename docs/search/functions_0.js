@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadscene_63',['LoadScene',['../class_menu_button_behavior.html#aa57339bbd1e5496a9a143a13b6710f48',1,'MenuButtonBehavior']]]
+  ['ammoregen_103',['AmmoRegen',['../class_shoot_behavior.html#ae04130ed3770901fdf7319c1c395dffc',1,'ShootBehavior']]]
 ];

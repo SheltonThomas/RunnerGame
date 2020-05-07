@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['enddistancetext_66',['endDistanceText',['../class_distance_from_end_behavior.html#a204a94c932deaeafe0b7bb73a5906ecc',1,'DistanceFromEndBehavior']]],
-  ['endpoint_67',['endPoint',['../class_distance_from_end_behavior.html#ae787d9cc611aee0997771376d17f9b9d',1,'DistanceFromEndBehavior']]]
+  ['countdown_122',['countdown',['../class_countdown_behavior.html#a3b33c594c2b99f5b43782a911ebeedb1',1,'CountdownBehavior']]],
+  ['countdownbehavior_123',['countdownBehavior',['../class_countdown_behavior.html#a20447ff29e7a54b7fdbe9897536935df',1,'CountdownBehavior']]]
 ];

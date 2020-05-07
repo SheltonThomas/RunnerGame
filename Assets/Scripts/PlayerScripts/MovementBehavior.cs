@@ -3,31 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * Moves the player forward.**/
 public class MovementBehavior : MonoBehaviour
 {
+    /**
+     * Movement speed of the player.**/
     public float movementSpeed = 10;
+    /**
+     * Sets the target that the player moves towards.**/
     public Transform target;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-            Vector3 movementDirection = (target.position - transform.position);
-            movementDirection.Normalize();
+        /**
+         * Moves the player forward.**/
+        Vector3 movementDirection = (target.position - transform.position);
+        movementDirection.Normalize();
 
-            transform.Translate(movementDirection * Time.deltaTime * movementSpeed);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.name == "Obstacle")
-        {
-            enabled = false;
-        }
+        transform.Translate(movementDirection * Time.deltaTime * movementSpeed);
     }
 }

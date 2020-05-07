@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['gravity_16',['gravity',['../class_gravity_behavior.html#a8acde8a2dd95d53fb4b1332eeb2d7448',1,'GravityBehavior.gravity()'],['../class_countdown_behavior.html#ac37c3dcae6444d6d602413183f6bee4d',1,'CountdownBehavior.gravity()']]],
-  ['gravitybehavior_17',['GravityBehavior',['../class_gravity_behavior.html',1,'']]],
-  ['gravitybehavior_2ecs_18',['GravityBehavior.cs',['../_gravity_behavior_8cs.html',1,'']]]
+  ['finishlinebehavior_21',['FinishLineBehavior',['../class_finish_line_behavior.html',1,'']]],
+  ['finishlinebehavior_2ecs_22',['FinishLineBehavior.cs',['../_finish_line_behavior_8cs.html',1,'']]],
+  ['followplayerbehavior_23',['FollowPlayerBehavior',['../class_follow_player_behavior.html',1,'']]],
+  ['followplayerbehavior_2ecs_24',['FollowPlayerBehavior.cs',['../_follow_player_behavior_8cs.html',1,'']]]
 ];

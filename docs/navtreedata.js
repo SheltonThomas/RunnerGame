@@ -43,7 +43,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_bullet_behavior_8cs.html"
+"_ammo_behavior_8cs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

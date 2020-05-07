@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['obstaclecollision_48',['ObstacleCollision',['../class_obstacle_collision.html',1,'']]]
+  ['gameoverbehavior_78',['GameOverBehavior',['../class_game_over_behavior.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gravity_68',['gravity',['../class_gravity_behavior.html#a8acde8a2dd95d53fb4b1332eeb2d7448',1,'GravityBehavior.gravity()'],['../class_countdown_behavior.html#ac37c3dcae6444d6d602413183f6bee4d',1,'CountdownBehavior.gravity()']]]
+  ['enddistancetext_124',['endDistanceText',['../class_distance_from_end_behavior.html#a204a94c932deaeafe0b7bb73a5906ecc',1,'DistanceFromEndBehavior']]],
+  ['endpoint_125',['endPoint',['../class_distance_from_end_behavior.html#ae787d9cc611aee0997771376d17f9b9d',1,'DistanceFromEndBehavior']]]
 ];

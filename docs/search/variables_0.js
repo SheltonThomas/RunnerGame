@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['bulletspeed_64',['bulletSpeed',['../class_bullet_behavior.html#a83d28ffa0a3f10c48b6c6e2a662c8a5d',1,'BulletBehavior']]]
+  ['ammocountertext_117',['ammoCounterText',['../class_ammo_behavior.html#a65db5aefdddcfe721045b2a4942e996d',1,'AmmoBehavior']]],
+  ['ammoregenrate_118',['ammoRegenRate',['../class_shoot_behavior.html#afc323a8774b7086aedf5b74bacdd8847',1,'ShootBehavior']]]
 ];

@@ -82,6 +82,8 @@ $(document).ready(function(){initNavTree('class_shoot_behavior.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_shoot_behavior-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ShootBehavior Class Reference</div>  </div>
@@ -93,6 +95,150 @@ Inheritance diagram for ShootBehavior:</div>
  <div class="center">
   <img src="class_shoot_behavior.png" alt=""/>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae04130ed3770901fdf7319c1c395dffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#ae04130ed3770901fdf7319c1c395dffc">AmmoRegen</a> ()</td></tr>
+<tr class="separator:ae04130ed3770901fdf7319c1c395dffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255146c75b47a5195f540f31f7ae2c93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#a255146c75b47a5195f540f31f7ae2c93">SetFacing</a> ()</td></tr>
+<tr class="separator:a255146c75b47a5195f540f31f7ae2c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502db20bb9489e0173d3cb2bcc5c11b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#a502db20bb9489e0173d3cb2bcc5c11b3">GetAmmoCount</a> ()</td></tr>
+<tr class="separator:a502db20bb9489e0173d3cb2bcc5c11b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1100c9c22593f6b6a97d792cc4a7cf0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#ac1100c9c22593f6b6a97d792cc4a7cf0">GetAmmoTimer</a> ()</td></tr>
+<tr class="separator:ac1100c9c22593f6b6a97d792cc4a7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1efa92ab9d24da39692b2a15a19cfd31"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#a1efa92ab9d24da39692b2a15a19cfd31">bullet</a></td></tr>
+<tr class="separator:a1efa92ab9d24da39692b2a15a19cfd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bd2373b985c4041d0a44306b871b55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#a32bd2373b985c4041d0a44306b871b55">maxAmmo</a></td></tr>
+<tr class="separator:a32bd2373b985c4041d0a44306b871b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc323a8774b7086aedf5b74bacdd8847"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shoot_behavior.html#afc323a8774b7086aedf5b74bacdd8847">ammoRegenRate</a></td></tr>
+<tr class="separator:afc323a8774b7086aedf5b74bacdd8847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles shooting for the player. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae04130ed3770901fdf7319c1c395dffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04130ed3770901fdf7319c1c395dffc">&#9670;&nbsp;</a></span>AmmoRegen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShootBehavior.AmmoRegen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Regenerates bullets as time passes </p>
+<p>If the player has ammo then return out of function.</p>
+<p>Reduces the ammo timer.</p>
+<p>If the ammo timer is less than or equal to 0, then increase ammo count and reset the timer.</p>
+
+</div>
+</div>
+<a id="a502db20bb9489e0173d3cb2bcc5c11b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502db20bb9489e0173d3cb2bcc5c11b3">&#9670;&nbsp;</a></span>GetAmmoCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ShootBehavior.GetAmmoCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns ammo count. </p>
+
+</div>
+</div>
+<a id="ac1100c9c22593f6b6a97d792cc4a7cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1100c9c22593f6b6a97d792cc4a7cf0">&#9670;&nbsp;</a></span>GetAmmoTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ShootBehavior.GetAmmoTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns ammo timer. </p>
+
+</div>
+</div>
+<a id="a255146c75b47a5195f540f31f7ae2c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255146c75b47a5195f540f31f7ae2c93">&#9670;&nbsp;</a></span>SetFacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ShootBehavior.SetFacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Faces the player in the direction that the mouse is pointing. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afc323a8774b7086aedf5b74bacdd8847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc323a8774b7086aedf5b74bacdd8847">&#9670;&nbsp;</a></span>ammoRegenRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ShootBehavior.ammoRegenRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1efa92ab9d24da39692b2a15a19cfd31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efa92ab9d24da39692b2a15a19cfd31">&#9670;&nbsp;</a></span>bullet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject ShootBehavior.bullet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GameObject that will be used as a bullet. </p>
+
+</div>
+</div>
+<a id="a32bd2373b985c4041d0a44306b871b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32bd2373b985c4041d0a44306b871b55">&#9670;&nbsp;</a></span>maxAmmo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ShootBehavior.maxAmmo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Keeps track of everything that has to do with ammo. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>PlayerScripts/<a class="el" href="_shoot_behavior_8cs.html">ShootBehavior.cs</a></li>
 </ul>

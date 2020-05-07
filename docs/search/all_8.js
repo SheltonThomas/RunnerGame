@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nextsceneid_26',['nextSceneId',['../class_finish_line_behavior.html#a73ac44eba78886644b2b657e2e19a187',1,'FinishLineBehavior']]]
+  ['isinvincible_31',['IsInvincible',['../class_player_collision_behavior.html#a2c14cfcf035834d1b944262683e236b9',1,'PlayerCollisionBehavior']]]
 ];
