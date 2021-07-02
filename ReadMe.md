@@ -1,5 +1,3 @@
-# AIEUnityTutorials
-
 ## How To Play
 
 ### Objective
